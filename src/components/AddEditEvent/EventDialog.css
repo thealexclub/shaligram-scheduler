@@ -1,0 +1,77 @@
+/* .MuiTextField-root{
+    margin:0 0 ;
+      width: "100%",
+} */
+
+.addmeeting .MuiDialog-container .MuiDialogContent-root{
+    padding: 60px 60px 0;
+}
+.addmeeting .MuiDialog-container .MuiDialogActions-root{
+    padding: 20px 60px 60px;
+} 
+.addmeeting .MuiDialog-container .MuiDialogContent-root .item label{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 5px;
+}
+.addmeeting .MuiDialog-container .MuiDialogContent-root .item .form-control{
+    border-color: #F6F8F9;
+    background-color: #F6F8F9;
+    border-radius: 4px; 
+    height: 36px;
+}
+.addmeeting .MuiDialog-container .MuiDialogContent-root .item .date_time .form-control{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0 10px;
+}
+.addmeeting .MuiDialog-container .MuiDialogContent-root .item input::placeholder{
+    color: #B2BBC6;
+    font-size: 14px;
+    font-weight: 400;
+}
+.addmeeting .MuiDialog-container .MuiDialogContent-root .item .form_field_wrapper{
+    margin: 0 0 24px;
+}
+.addmeeting .MuiDialog-container .MuiDialogContent-root .item .form_field_wrapper select{
+    display: block;
+    border-color: #F6F8F9;
+    background-color: #F6F8F9;
+    border-radius: 4px; 
+    height: 36px;
+}
+.addmeeting .MuiDialog-container .MuiDialogContent-root .item .form_field_wrapper textarea{
+    height: auto;
+}
+.addmeeting .MuiDialog-container .MuiDialogActions-root .MuiBox-root{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.addmeeting .MuiDialog-container .MuiDialogActions-root .MuiBox-root .btn{
+    margin: 0 15px 15px 0;
+}
+.addmeeting .MuiDialog-container .MuiDialogActions-root .MuiBox-root .btn svg{
+    margin: 0 12px 0 0;
+}
+
+
+@media screen and (min-width: 992px) {
+    .addmeeting .MuiDialog-container .MuiPaper-root{
+        max-width: 960px;
+    }  
+}
+@media screen and (max-width: 991px) {
+    .addmeeting .MuiDialog-container .MuiDialogContent-root {
+        padding: 30px 30px 0;
+    }
+    .addmeeting .MuiDialog-container .MuiDialogActions-root {
+        padding: 20px 30px 30px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .addmeeting .MuiDialog-container .MuiDialogActions-root .MuiBox-root .btn{
+        margin: 0 0 15px;
+        width: 100%;
+    }
+}

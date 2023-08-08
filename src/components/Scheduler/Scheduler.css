@@ -1,0 +1,142 @@
+body {
+    position: relative;
+    overflow: hidden;
+}
+.priority-low {
+    /* border-top: 2px solid #ffd600 !important; */
+    background-color: #FFFDF1;
+    border-radius: 10px;
+    color: #000 !important;
+}
+
+.priority-Medium {
+    /* border-top: 2px solid #FF9F24 !important; */
+    background-color: #FFF5E9;
+    border-radius: 10px;
+    color: #000 !important;
+
+}
+
+.priority-High {
+    /* border-top: 2px solid #028C4A !important; */
+    background-color: #E6F8EF;
+    color: #000 !important;
+    border-radius: 10px;
+}
+
+.priority-Critical {
+    /* border-top: 2px solid #5603ad !important; */
+    background-color: #e5d9f3;
+    color: #000 !important;
+    border-radius: 10px;
+}
+
+
+.cal {
+    display: block;
+}
+
+.fc-v-event .fc-event-main {
+    color: #000;
+}
+
+.fc-v-event {
+    border: unset;
+}
+.my_calender_wrapper .fc .fc-scrollgrid-liquid {
+    height: 80vh;
+}
+
+.fc-timegrid-event, .fc-timegrid-more-link {
+    border-radius: 10px;
+}
+
+/* My calender css start */
+.calender_main_wrapper {
+    margin: 40px;
+}
+.my_calender_wrapper {
+    display: flex;
+   
+    justify-content: space-between;
+}
+.my_calender{
+    margin: 0 40px;
+    width: 85vw;
+}
+.external-events-data {
+    width: 15vw;
+    margin-block: 65px 0;
+    height: 80vh;
+    /* overflow-y: scroll; */
+}
+.fc .fc-button-primary:focus,
+.fc .fc-button:focus{
+    box-shadow: none;
+}
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus, .fc .fc-button-primary:not(:disabled):active:focus{
+    box-shadow: none;
+}
+.my_calender .fc-header-toolbar .fc-button-group .fc-button{
+    font-size: 20px;
+    font-weight: 500;
+    color: #546881;
+    background-color: transparent;
+    border: none;
+    text-transform: capitalize;
+    opacity: 1;
+}
+.my_calender .fc-header-toolbar .fc-button-group .fc-button-primary .fc-icon{
+    border: 1.5px solid #546881;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+.my_calender .fc-header-toolbar .fc-toolbar-title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #000000;
+}
+.my_calender .fc-header-toolbar .fc-button-group .fc-timeGridWeek-button{
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #F1F2F4;
+    border-radius: 8px 0 0 8px;
+    color: #B2BBC6;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    padding: 5px 14px;
+}
+.my_calender .fc-header-toolbar .fc-button-group .fc-timeGridDay-button{
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: #F1F2F4;
+    border-radius: 0 8px 8px 0;
+    color: #B2BBC6;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    padding: 5px 14px;
+}
+.my_calender .fc-header-toolbar .fc-button-group .fc-button.fc-button-active{
+    color: #5372E7;
+}
+
+.my_calender .fc-view-harness .fc-col-header  tr th .fc-col-header-cell-cushion{
+    color: #1D242D;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.my_calender .fc .fc-view-harness .fc-timegrid-col.fc-day-today{
+    background-color: #E5EAFB;
+}
+.my_calender .fc .fc-view-harness .fc-daygrid-day.fc-day-today{
+    background-color: #E5EAFB;
+}
+/* My calender css end */

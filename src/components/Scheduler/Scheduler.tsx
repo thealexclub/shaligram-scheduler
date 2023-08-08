@@ -51,7 +51,7 @@ const externalEvents: IEvent[] = [
 const Schedular = () => {
     const calanderRef = useRef<FullCalendar>(null);
 
-    const [tasksViewSnap, tasksViewProxy] = useViewItems('Time Logs', 'All');
+    const [tasksViewSnap, tasksViewProxy] = useViewItems('Tasks', 'All');
 
     const events = useMemo(function mapTasksToEvents() {
         return tasksViewSnap.map<ListItemMixin, IEvent>(item => ({
@@ -82,7 +82,7 @@ const Schedular = () => {
     const [isPrinciple, setIsPrinciple] = useState<ListItemMixin[]>([]);
 
     useEffect(() => {
-        tasksViewProxy.get({$filter: `assigned_to_id eq ${}`});
+        tasksViewProxy.get();
 
         getViewDataByName('Principals', 'All').get().then(res => {
             setIsPrinciple(res.map<ListItemMixin, ListItemMixin>(principal => principal));
